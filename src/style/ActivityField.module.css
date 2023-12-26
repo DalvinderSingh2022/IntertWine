@@ -1,0 +1,5 @@
+.container progress {
+    height: 12px;
+    max-width: 120px;
+    accent-color: var(--primary);
+}

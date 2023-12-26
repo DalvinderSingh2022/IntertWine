@@ -1,4 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'poppins', sans-serif;
+    color: var(--text);
+    white-space: nowrap;
+}
+
+:root {
+    --background: #f8f9fb;
+    --primary: #667d8f;
+    --text: #3b3b3c;
+    --text-light: #47484a;
+    --hover: #e0f1fc;
+    --border: #e4e4e4;
+}
+
+body {
+    /* overflow: hidden; */
+}
+
+button svg {
+    fill: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1.5em 3em;
+    background-color: var(--background);
+}
+
+header form {
+    width: min(360px, calc(100% - 4em));
+}
+
+header button,
+header input {
+    height: 45px;
+    border: none;
+    outline: none;
+}
+
+header button {
+    width: 45px;
+    border-radius: 0 4px 4px 0;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+header input {
+    padding: 14px 18px;
+    border-radius: 4px 0 0 4px;
+    width: calc(100% - 45px);
+}
+
+.tableContainer {
+    width: 100%;
+    /* overflow-y: hidden;
+    overflow-x: auto; */
+}
+
+.tableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0 4em;
+}
+
+table thead {
+    background-color: var(--background);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+table thead th>div,
+table tbody td>* {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: capitalize;
+}
+
+table thead th,
+table tbody td {
+    cursor: default;
+    padding: 16px 18px;
+    font-size: 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+table tbody td button {
+    justify-content: center;
+    background-color: var(--primary);
+    border-radius: 4px;
+    cursor: pointer;
 }

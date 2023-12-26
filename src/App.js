@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Header from './components/Header';
+import Table from './components/Table';
 
 const App = () => {
   return (
-    <div>
-      Hello
-    </div>
+    <>
+      <Header />
+      <div className="tableContainer"><Table /></div>
+    </>
   )
 }
 
